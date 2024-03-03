@@ -1,0 +1,95 @@
+body {
+    font-family: Book Antiqua, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    background-color: #333;
+    color:White;
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+nav {
+    background-color: #5b5656;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: rgb(12, 12, 12);
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 5px;
+}
+
+main {
+    padding: 30px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+}
+
+input {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    background-color: #333;
+    color: rgb(241, 234, 234);
+    padding: 1px;
+    text-align: center;
+    position:relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.info{
+    display: flex;
+    align-items:center;
+    justify-content:left;
+
+}
+
+.info p{
+    justify-content: center;
+    width: 60%;
+}
+#moneybank{
+    width: 50%;
+    height: 40%;
+    margin-left:25%;
+}
+button{
+    padding: 10px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
