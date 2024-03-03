@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly Budget Tracker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+  /* styles.css */
+
+  body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+  }
+
+  h1 {
+      text-align: center;
+      color: #333;
+  }
+
+  form {
+      margin-bottom: 20px;
+  }
+
+  label {
+      display: block;
+      margin-bottom: 5px;
+  }
+
+  input {
+      width: 50%;
+      padding: 8px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+  }
+
+  button {
+      padding: 10px;
+      background-color: #000;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+  }
+
+  button:hover {
+      background-color: #45a049;
+  }
+
+  #budget-summary {
+      border: 1px solid #ddd;
+      padding: 10px;
+      margin-bottom: 20px;
+  }
+
+  #budget-summary h2 {
+      color: #333;
+  }
+
+<body>
+
+    <h1>Monthly Budget Tracker</h1>
+
+    <div id="budget-summary">
+        <h2>Budget Summary</h2>
+        <p>Total Income: $<span id="totalIncome">{{ budget_data['totalIncome'] }}</span></p>
+        <p>Total Expenses: $<span id="totalExpenses">{{ budget_data['totalExpenses'] }}</span></p>
+        <p>Remaining Budget: $<span id="remainingBudget">{{ budget_data['remainingBudget'] }}</span></p>
+    </div>
+
+    <form action="/add_income" method="POST">
+        <label for="incomeAmount">Income Amount:</label>
+        <input type="number" id="incomeAmount" name="incomeAmount" required>
+        <button type="submit">Add Income</button>
+    </form>
+
+    <form action="/add_expense" method="POST">
+        <label for="expenseAmount">Expense Amount:</label>
+        <input type="number" id="expenseAmount" name="expenseAmount" required>
+        <button type="submit">Add Expense</button>
+    </form>
+
+</body>
+
+</html>

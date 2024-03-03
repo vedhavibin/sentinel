@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly Budget Tracker</title>
+    <!-- Add your CSS stylesheets or links to external stylesheets here -->
+    <style>
+        body {
+            font-family: Book Antiqua, sans-serif;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #333;
+            color:White;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #555;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: rgb(150, 137, 137);
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 5px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: 50%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #000000;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            background-color: #333;
+            color: rgb(241, 234, 234);
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Monthly Budget Tracker</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Income</a>
+        <a href="#">Expenses</a>
+        <a href="#">Summary</a>
+    </nav>
+
+    <main>
+        <section id="income">
+            <h2>Income</h2>
+            <label for="incomeAmount">Amount:</label>
+            <input type="number" id="incomeAmount" placeholder="Enter income amount">
+            <button onclick="addIncome()">Add Income</button>
+        </section>
+
+        <section id="expenses">
+            <h2>Expenses</h2>
+            <label for="expenseAmount">Amount:</label>
+            <input type="number" id="expenseAmount" placeholder="Enter expense amount">
+            <button onclick="addExpense()">Add Expense</button>
+        </section>
+
+        <section id="summary">
+            <h2>Budget Summary</h2>
+            <p>Total Income: $<span id="totalIncome">0.00</span></p>
+            <p>Total Expenses: $<span id="totalExpenses">0.00</span></p>
+            <p>Remaining Budget: $<span id="remainingBudget">0.00</span></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Monthly Budget Tracker. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function addIncome() {
+            // Add logic to update income and summary
+        }
+
+        function addExpense() {
+            // Add logic to update expenses and summary
+        }
+    </script>
+
+</body>
+
+</html>
