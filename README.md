@@ -6,5 +6,4 @@ Through this website the users will be able to save money by knowing their daily
 This website mainly focus on financial awareness of an individual by themself.<br>
 ## <b>Stacks Used</b><br>
  -Python<br>-CSS<br>-HTML
- ## <b>TEAM MEMBERS<b>
- -Vedha<br>-Lakshmi<br>-Rayyan<br>-Greeshma
+ 
